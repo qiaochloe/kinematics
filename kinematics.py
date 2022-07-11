@@ -3,7 +3,11 @@ import copy
 import matplotlib.pyplot as plt
 import numpy as np
 
-# TODO: make functions return instead of print?
+# TODO:
+# make functions return instead of print?
+# make plot_kinematics_variables() work when time is two values
+# write more tests
+# remove solve_equation() or evaluate_variable() [too similar]
 
 # Prompt dictionary
 name_dict = {
@@ -187,11 +191,9 @@ def plot_kinematics_variables(var_dict):
 
 
 def main():
-    # var_dict = get_user_input()
-    var_dict = {"deltax": 0, "v0": 1, "v": "v", "a": -2, "t": "t"}
+    var_dict = get_user_input()
     equation_solver(var_dict)
-    print(var_dict)
-    # plot_kinematics_variables(var_dict)
+    plot_kinematics_variables(var_dict)
 
 
 if __name__ == "__main__":
